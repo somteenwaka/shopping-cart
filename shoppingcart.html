@@ -9,9 +9,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="shoppingcart.css">
-        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/shoppingcart.css">
+        <link rel="stylesheet" href="./assets/css/animate.css">
         
     </head>
     <body>
@@ -22,23 +22,28 @@
                         <h3> Shopping Cart</h3>
                     </div>
                     <hr class="small-line" />
-                    <img src="./b0e5861e8b9304b0078d3569728f96fa-cart.png" height="200px" width="200px" />
-                    <button type="button" class="btn btn-light">
+                    <img src="./assets/images/b0e5861e8b9304b0078d3569728f96fa-cart.png" height="200px" width="200px" />
+                    <button 
+                    onclick="changeView()"
+                    id="changeTxt"
+                    type="button"
+                    class="btn btn-light"
+                    >
                          View Shopping Cart
                     </button>
                     <hr class="small-line" />
                 </div>
             </div>
 
-        <div class="col-md-10 full-bar">
+          
+            <div class="col-md-10 full-bar">
             <input class= "xty form-control mr-sm-2" type="search"
             placeholder="search" aria-label="search" />
 
             <span class="fas fa-search"></span>
             <hr>
 
-
-        
+            <div id="viewShoppingCart">
         <div class= "empty-top"></div>
 
         <div class= "items">
@@ -49,18 +54,20 @@
             <hr>
             <p> Item name: Dress <span class="quantity"><label> Quantity: </label> <input type="text"></span></p>            
             <p> Price:<span class="price">N8000</span></p>
-            <button class="add-cart animated heartBeat infinite">add to cart</button>
+            <button class="add-cart animated bounce infinite">add to cart</button>
             <hr>
             <p> Item name: Short <span class="quantity"><label> Quantity: </label><input type="text"></span></p>
             <p> Price: <span class="price">N4000</span></p>
-            <button class="add-cart animated swing infinite">Add to cart</button>
+            <button class="add-cart animated bounce infinite">Add to cart</button>
             <hr>
             <p> Item name: Jeans <span class="quantity"><label>Quantity: </label><input type= "text"></span></p>
             <p> price: <span class= "price">N7000</span></p>
-            <button class="add-cart animated flash infinite">Add to cart</button></button>
+            <button class="add-cart animated bounce infinite">Add to cart</button></button>
            </div> 
+            </div>
 
 
+            <div id="selectShoppingCart">
            <div class="empty-top"></div>
            <div class="items">
                <table class="table">
@@ -89,7 +96,7 @@
            </div>
            </div>
         </div>
-        
-        <script src="" async defer></script>
+    </div>
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>
